@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codewars Stats</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Codewars Stats</h1>
+      <form id="profileForm">
+        <input
+          type="text"
+          id="profileName"
+          placeholder="Enter your Codewars profile name"
+          required
+        />
+        <button type="submit">Get Stats</button>
+      </form>
+      <div id="results" class="hidden">
+        <h2>Results for <span id="resultProfileName"></span></h2>
+        <div id="statsContainer"></div>
+      </div>
+      <div id="loading" class="hidden">Loading...</div>
+      <div id="error" class="hidden"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
